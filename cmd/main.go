@@ -1,8 +1,9 @@
 package main
 
 import (
-	"nukeport/internals/cli"
 	"os"
+
+	"github.com/ixismail/nukeport/internals/cli"
 )
 
 func main() {

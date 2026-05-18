@@ -2,8 +2,9 @@ package cli
 
 import (
 	"fmt"
-	"nukeport/internals/colors"
 	"os"
+
+	"github.com/ixismail/nukeport/internals/colors"
 )
 
 func Run(args []string) {

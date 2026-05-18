@@ -3,10 +3,11 @@ package nuker
 import (
 	"bufio"
 	"fmt"
-	"nukeport/internals/colors"
 	"os"
 	"runtime"
 	"strings"
+
+	"github.com/ixismail/nukeport/internals/colors"
 )
 
 
@@ -16,6 +17,7 @@ func Nuke(port string) {
 	switch osType {
 	case "windows":
 		fmt.Printf("%s[*]%s OS Detected: 💻 Windows\n", colors.Cyan, colors.Reset)
+		NukeWindows(port)
 	case "darwin":
 		fmt.Printf("%s[*]%s OS Detected: 🍎 macOS\n", colors.Cyan, colors.Reset)
 	case "linux":
