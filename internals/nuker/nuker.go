@@ -20,6 +20,7 @@ func Nuke(port string) {
 		NukeWindows(port)
 	case "darwin":
 		fmt.Printf("%s[*]%s OS Detected: 🍎 macOS\n", colors.Cyan, colors.Reset)
+		NukeMac(port)
 	case "linux":
 		fmt.Printf("%s[*]%s OS Detected: 🐧 Linux\n", colors.Cyan, colors.Reset)
 		NukeLinux(port)
