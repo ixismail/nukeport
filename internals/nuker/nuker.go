@@ -22,6 +22,7 @@ func Nuke(port string) {
 		fmt.Printf("%s[*]%s OS Detected: 🍎 macOS\n", colors.Cyan, colors.Reset)
 	case "linux":
 		fmt.Printf("%s[*]%s OS Detected: 🐧 Linux\n", colors.Cyan, colors.Reset)
+		NukeLinux(port)
 	default:
 		fmt.Printf("%s[ERROR]%s Unsupported OS -> %s\n", colors.Red, colors.Reset, osType)
 	}

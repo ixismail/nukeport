@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/ixismail/nukeport/internals/colors"
+	"github.com/ixismail/nukeport/internals/nuker"
 )
 
 func Run(args []string) {
@@ -19,5 +20,6 @@ func Run(args []string) {
 	port := args[2]
 	
 	fmt.Printf("%s[*]%s Target locked: Port %s\n", colors.Cyan, colors.Reset, port)
-	
+
+	nuker.Nuke(port)
 }
