@@ -8,7 +8,14 @@ import (
 	"github.com/ixismail/nukeport/internals/nuker"
 )
 
+const Version = "1.0.0"
+
 func Run(args []string) {
+
+	if len(args) >= 2 && (args[1] == "-v" || args[1] == "--version") {
+		fmt.Printf("%sNukeport%s version %s\n", colors.Cyan, colors.Reset, Version)
+		os.Exit(0)
+	}
 
 	if len(args) < 3 || args[1] != "port" {
 		fmt.Printf("%s[ERROR]%s Invalid command.\n", colors.Red, colors.Reset)
